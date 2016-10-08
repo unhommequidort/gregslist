@@ -72,9 +72,13 @@ video {
     background: transparent;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    sans-serif;
+    font-family: Arial, sans-serif;
+
 }
 
 h1 {
@@ -90,28 +94,102 @@ li {
     list-style: none;
 }
 
-nav {
+header nav {
     padding: 15px 20px;
     background-color: #eee;
     position: relative;
+    border-bottom: 1px solid #ddd;
 }
 
-nav a {
+header nav a {
     color: purple;
 }
 
-nav ul {
+header nav ul {
     position: absolute;
     right: 10px;
     top: 15px;
 }
 
-nav li {
+header nav li {
     display: inline-block;
     padding-right: 10px;
     font-size: 20px;
 }
 
 .search-section {
-    padding: 50px 100px;
+		    padding: 50px 100px;
+    font-size: 18px;
+}
+
+
+.search-section input {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 0 5px 0 8px;
+  width: 500px;
+}
+
+.search-section button {
+  font-size: 17px;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+}
+
+.magnifying-glass-icon {
+	width: 20px;
+}
+
+.prevnext {
+	margin-bottom: 50px;
+	margin-left: 100px;
+}
+
+.prevnext a {
+	color: #000;
+}
+
+.prevnext li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.prev {
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-radius: 3px 0 0 3px;
+}
+
+.next {
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+
+.current {
+	border: 1px solid #ddd;
+}
+
+.listings {
+	color: #999;
+	margin-left: 100px;
+}
+
+.listing {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.listings span {
+	color: blue;
+	display: inline-block;
+	margin: 0 15px;
+	font-weight: bold;
 }
